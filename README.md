@@ -2,7 +2,7 @@
 
 A simple 3D arcade game, inspired by Sonic the Hedgehog
 
-![Screenshot](screenshot.png?raw=true "Screenshot")
+![Screenshot](./screenshot.png?raw=true "Screenshot")
 
 ## Getting started
 
@@ -14,3 +14,4 @@ npm install
 # Start the application
 npm start
 ```
+or alternatively, run "bin/Sonic Dash Run.exe"
