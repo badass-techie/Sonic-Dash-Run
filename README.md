@@ -14,4 +14,4 @@ npm install
 # Start the application
 npm start
 ```
-or alternatively, run "bin/Sonic Dash Run.exe"
+or alternatively, if you're on windows, run "bin/Sonic Dash Run.exe"
