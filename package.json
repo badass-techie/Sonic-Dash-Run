@@ -1,0 +1,23 @@
+{
+  "name": "sonic_dash_run",
+  "version": "1.0.0",
+  "description": "A simple 3d arcade game",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "electron .",
+    "package-win": "electron-packager . --overwrite --asar --platform=win32 --icon=./assets/icon.ico",
+    "package-linux" : "electron-packager . --overwrite --platform=linux --arch=x64 --icon=./assets/icon.png --prune=true --out=release-builds"
+  },
+  "author": "Moses Odhiambo",
+  "license": "ISC",
+  "dependencies": {
+    "electron-packager": "^14.2.1",
+    "electron-titlebar-windows": "^3.0.0"
+  },
+  "devDependencies": {
+    "electron": "^8.0.0"
+  }
+}
