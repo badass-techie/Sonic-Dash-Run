@@ -589,7 +589,7 @@ const roll = () => {
 
 //triggers the strafe action
 const strafe = strafeLeft => {
-    if ((currentLane == -1 && strafeLeft == true) || (currentLane == 1 && strafeLeft == false) || sonicAction === "strafe") return;   //makes sure sonic stays in one of the lanes
+    if ((currentLane == -1 && strafeLeft == true) || (currentLane == 1 && strafeLeft == false) || sonicAction !== "run") return;   //makes sure sonic stays in one of the lanes
     let dX = strafeLeft ? -laneWidth : laneWidth;
     let dTheta = strafeLeft ? THREE.Math.degToRad(dRot) : -THREE.Math.degToRad(dRot);
     let movement = new THREE.VectorKeyframeTrack('.position', [0, (strafeDuration)], [sonic.position.x, sonic.position.y, sonic.position.z, sonic.position.x + dX, sonic.position.y, sonic.position.z]);
