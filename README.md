@@ -13,5 +13,11 @@ npm install
 
 # Start the application
 npm start
+
+#Package the app for windows
+npm run package-win
+
+#Package the app for linux
+npm run package-linux
+
 ```
-or alternatively, if you're on windows, run "bin/Sonic Dash Run.exe"
