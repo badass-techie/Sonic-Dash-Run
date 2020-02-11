@@ -14,10 +14,10 @@ npm install
 # Start the application
 npm start
 
-#Package the app for windows
+# Package the app for windows
 npm run package-win
 
-#Package the app for linux
+# Package the app for linux
 npm run package-linux
 
 ```
