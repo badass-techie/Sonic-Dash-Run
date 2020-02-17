@@ -562,7 +562,7 @@ const monitorActions = (delta) => {
 const jump = () => {
     if (sonicAction === "run"){
         sonicAction = "jump";
-        jumpSound.play();
+        if (!sonicHasCrashed) jumpSound.play();
         setTimeout(() => {
             sonicAction = "run";
             animations.fall.stop();
@@ -576,7 +576,7 @@ const jump = () => {
 const roll = () => {
     if (sonicAction === "run"){
         sonicAction = "roll";
-        jumpSound.play();
+        if (!sonicHasCrashed) jumpSound.play();
         animations.run.stop();
         animations.roll.play();
         setTimeout(() => {
